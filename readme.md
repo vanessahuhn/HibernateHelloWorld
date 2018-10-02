@@ -30,9 +30,9 @@ Le fichier pour cette classe est disponible [ici](https://github.com/vanessahuhn
 
 Ce fichier est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/src/Lecturer.hbm.xml). Il permet d'indiquer à Hibernate quelle classe représente quelle table et quelle variable instantanée correspond à quelle colonne. 
 
-Dans le tag <class>, l'attribut name correspond au nom de la classe persistante et table spécifie au nom de la table de la base de données.
+Dans le tag *class*, l'attribut name correspond au nom de la classe persistante et table spécifie au nom de la table de la base de données.
 
-Dans le tag <property>, l'attribut name correspond à l'attribut de la classe persistante et column spécifie le nom du champ dans la base de données. L'attribut type permet de définir le type de données (ici, string).
+Dans le tag *property*, l'attribut name correspond à l'attribut de la classe persistante et column spécifie le nom du champ dans la base de données. L'attribut type permet de définir le type de données (ici, string).
 
 /!\ **Attention**, avec le nom de la classe il faut penser à ajouter le nom du package. Ici, le nom de la classe est *model.Lecturer*.
 
