@@ -1,22 +1,28 @@
 # HibernateHelloWorld
 
-[TOC]
+Introduction(#title1)
+Création de la base de données(#title2)
+Création du projet Java(#title3)
+  La classe persistante 'Lecturer.java'(#subtitle1)
+  Fichier de mappage 'Lecturer.hbm.xml'(#subtitle2)
+  Le fichier de configuration 'hibernate.cfg.xml'(#subtitle3)
+  La classe de test 'SimpleTest.java'(#subtitle4)
 
-## Introduction
+## <a name="title1">Introduction</a>
 
 Cette application sert à ajouter des informations à une base de données sur des maîtres de conférence d'une université.
 
-## Création de la base de données
+## <a name="title2">Création de la base de données</a>
 
 En amont, il faut créer une base de données *Universite* et une table *Lecturer*. Le script pour le faire est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/SQL/createDB%20%2B%20table.sql). Il est possible de ne pas spécifier les champs *FName* et *LName* qui seront automatiquement créés au lancement de l'application.
 
-## Création du projet Java
+## <a name="title3">Création du projet Java</a>
 
-### La classe persistante 'Lecturer.java'
+### <a name="subtitle1">La classe persistante 'Lecturer.java'</a>
 
 Le fichier pour cette classe est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/src/model/Lecturer.java). Cette classe est notre classe modèle. Elle est aussi appelée classe persistante. Elle correspond à la table *Lecturer* de notre base de données. Elle est placée dans le package *model*.
 
-### Fichier de mappage 'Lecturer.hbm.xml'
+### <a name="subtitle2">Fichier de mappage 'Lecturer.hbm.xml'</a>
 
 Ce fichier est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/src/Lecturer.hbm.xml). Il permet d'indiquer à Hibernate quelle classe représente quelle table et quelle variable instantanée correspond à quelle colonne. 
 
@@ -26,7 +32,7 @@ Dans le tag <property>, l'attribut name correspond à l'attribut de la classe pe
 
 /!\ **Attention**, avec le nom de la classe il faut penser à ajouter le nom du package. Ici, le nom de la classe est *model.Lecturer*.
 
-### Le fichier de configuration 'hibernate.cfg.xml'
+### <a name="subtitle3">Le fichier de configuration 'hibernate.cfg.xml'</a>
 
 Ce fichier est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/src/hibernate.cfg.xml). Il permet de définir les configurations Hibernate.
 
@@ -37,8 +43,7 @@ Ce fichier est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWor
 - le mot de passe du serveur MySQL dans la propriété *connection.password*
 
 
-
-### La classe de test 'SimpleTest.java'
+### <a name="subtitle4">La classe de test 'SimpleTest.java'</a>
 
 Le fichier pour cette classe est disponible [ici](https://github.com/vanessahuhn/HibernateHelloWorld/blob/master/src/application/SimpleTest.java). Il s'agit de la classe qui contient la méthode main. Elle est placée dans le package *application*.
 
