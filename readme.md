@@ -3,7 +3,9 @@
 1. [Introduction](#title1)
 2. [Création de la base de données](#title2)
 3. [Création du projet Java](#title3)
-  * [La classe persistante 'Lecturer.java'](#subtitle1)
+
+  ⋅⋅⋅[La classe persistante 'Lecturer.java'](#subtitle1)
+  
   * [Fichier de mappage 'Lecturer.hbm.xml'](#subtitle2)
   * [Le fichier de configuration 'hibernate.cfg.xml'](#subtitle3)
   * [La classe de test 'SimpleTest.java'](#subtitle4)
